@@ -5,9 +5,16 @@
 ```ts
 /// <reference types="react" />
 
+import { AppComponents } from '@backstage/core-plugin-api';
 import { BackstagePlugin } from '@backstage/frontend-plugin-api';
+import { Extension } from '@backstage/frontend-plugin-api';
 import { ExtensionOverrides } from '@backstage/frontend-plugin-api';
 import { default as React_2 } from 'react';
+
+// @public (undocumented)
+export function collectLegacyComponents(
+  components: Partial<AppComponents>,
+): Extension<unknown>[];
 
 // @public (undocumented)
 export function collectLegacyRoutes(
