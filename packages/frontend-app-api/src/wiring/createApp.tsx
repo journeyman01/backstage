@@ -90,6 +90,7 @@ import { RoutingProvider } from '../routing/RoutingProvider';
 import { resolveRouteBindings } from '../routing/resolveRouteBindings';
 import { collectRouteIds } from '../routing/collectRouteIds';
 import { createAppTree } from '../tree';
+import { CoreComponents } from '../extensions/CoreComponents';
 import { AppNode } from '@backstage/frontend-plugin-api';
 
 const builtinExtensions = [
@@ -97,6 +98,7 @@ const builtinExtensions = [
   CoreRoutes,
   CoreNav,
   CoreLayout,
+  CoreComponents,
   LightTheme,
   DarkTheme,
 ];
@@ -354,7 +356,13 @@ function createLegacyAppContext(plugins: BackstagePlugin[]): AppContext {
     },
 
     getComponents(): AppComponents {
-      return defaultComponents;
+      return {
+        ...defaultComponents,
+        Progress: () => null,
+        BootErrorPage: () => null,
+        NotFoundErrorPage: () => null,
+        ErrorBoundaryFallback: () => null,
+      };
     },
   };
 }
