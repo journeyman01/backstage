@@ -20,7 +20,12 @@ import {
   AppTree,
   appTreeApiRef,
   BackstagePlugin,
+  ComponentRef,
+  coreBootErrorPageComponentRef,
+  coreErrorBoundaryFallbackComponentRef,
   coreExtensionData,
+  coreNotFoundErrorPageComponentRef,
+  coreProgressComponentRef,
   ExtensionDataRef,
   ExtensionOverrides,
   RouteRef,
@@ -91,20 +96,18 @@ import { resolveRouteBindings } from '../routing/resolveRouteBindings';
 import { collectRouteIds } from '../routing/collectRouteIds';
 import { createAppTree } from '../tree';
 import {
-  CoreComponents,
   DefaultProgressComponent,
   DefaultErrorBoundaryComponent,
   DefaultBootErrorPageComponent,
   DefaultNotFoundErrorPageComponent,
-} from '../extensions/CoreComponents';
+} from '../extensions/components';
 import { AppNode } from '@backstage/frontend-plugin-api';
 
-const builtinExtensions = [
+export const builtinExtensions = [
   Core,
   CoreRoutes,
   CoreNav,
   CoreLayout,
-  CoreComponents,
   DefaultProgressComponent,
   DefaultErrorBoundaryComponent,
   DefaultBootErrorPageComponent,
@@ -272,6 +275,7 @@ export function createApp(options?: {
       allFeatures.filter(
         (f): f is BackstagePlugin => f.$$type === '@backstage/BackstagePlugin',
       ),
+      tree.root,
     );
 
     const routeIds = collectRouteIds(allFeatures);
@@ -349,7 +353,49 @@ export function toLegacyPlugin(plugin: BackstagePlugin): LegacyBackstagePlugin {
   return legacy;
 }
 
-function createLegacyAppContext(plugins: BackstagePlugin[]): AppContext {
+function createLegacyAppContext(
+  plugins: BackstagePlugin[],
+  core: AppNode,
+): AppContext {
+  const components = core.edges.attachments
+    .get('components')
+    ?.map(e => e.instance?.getData(coreExtensionData.component));
+
+  function getComponent<TRef extends ComponentRef<unknown>>(
+    ref: TRef,
+  ): TRef['T'] | undefined {
+    return components?.find(component => component?.ref.id === ref.id)?.impl;
+  }
+
+  const {
+    Progress: DefaultProgress,
+    BootErrorPage: DefaultBootErrorPage,
+    NotFoundErrorPage: DefaultNotFoundErrorPage,
+    ErrorBoundaryFallback: DefaultErrorBoundaryFallback,
+    ...rest
+  } = defaultComponents;
+
+  const CustomProgress = getComponent(coreProgressComponentRef);
+
+  const CustomBootErrorPage = getComponent(coreBootErrorPageComponentRef);
+
+  const CustomNotFoundErrorPage = getComponent(
+    coreNotFoundErrorPageComponentRef,
+  );
+
+  const CustomErrorBoundaryFallback = getComponent(
+    coreErrorBoundaryFallbackComponentRef,
+  );
+
+  const overriddenComponents = {
+    ...rest,
+    Progress: CustomProgress ?? DefaultProgress,
+    BootErrorPage: CustomBootErrorPage ?? DefaultBootErrorPage,
+    NotFoundErrorPage: CustomNotFoundErrorPage ?? DefaultNotFoundErrorPage,
+    ErrorBoundaryFallback:
+      CustomErrorBoundaryFallback ?? DefaultErrorBoundaryFallback,
+  };
+
   return {
     getPlugins(): LegacyBackstagePlugin[] {
       return plugins.map(toLegacyPlugin);
@@ -366,14 +412,7 @@ function createLegacyAppContext(plugins: BackstagePlugin[]): AppContext {
     },
 
     getComponents(): AppComponents {
-      return {
-        ...defaultComponents,
-        // The default nullable components are overridden by the CoreComponents built-in extension
-        Progress: () => null,
-        BootErrorPage: () => null,
-        NotFoundErrorPage: () => null,
-        ErrorBoundaryFallback: () => null,
-      };
+      return overriddenComponents;
     },
   };
 }
