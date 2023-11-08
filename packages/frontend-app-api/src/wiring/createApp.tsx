@@ -91,6 +91,7 @@ import { resolveRouteBindings } from '../routing/resolveRouteBindings';
 import { collectRouteIds } from '../routing/collectRouteIds';
 import { createAppTree } from '../tree';
 import { AppNode } from '@backstage/frontend-plugin-api';
+import { RouteTracker } from '../routing/RouteTracker';
 
 const builtinExtensions = [
   Core,
@@ -264,12 +265,13 @@ export function createApp(options?: {
 
     const routeIds = collectRouteIds(allFeatures);
 
+    const routeInfo = extractRouteInfoFromAppNode(tree.root);
     const App = () => (
       <ApiProvider apis={createApiHolder(tree, config)}>
         <AppContextProvider appContext={appContext}>
           <AppThemeProvider>
             <RoutingProvider
-              {...extractRouteInfoFromAppNode(tree.root)}
+              {...routeInfo}
               routeBindings={resolveRouteBindings(
                 options?.bindRoutes,
                 config,
@@ -278,6 +280,7 @@ export function createApp(options?: {
             >
               {/* TODO: set base path using the logic from AppRouter */}
               <BrowserRouter>
+                <RouteTracker routeObjects={routeInfo.routeObjects} />
                 {tree.root.instance!.getData(coreExtensionData.reactElement)}
               </BrowserRouter>
             </RoutingProvider>
