@@ -20,6 +20,7 @@
  * @packageDocumentation
  */
 
+export * from './analytics';
 export * from './apis';
 export * from './components';
 export * from './extensions';
