@@ -82,6 +82,8 @@ export const CatalogTable = (props: CatalogTableProps) => {
   const { isStarredEntity, toggleStarredEntity } = useStarredEntities();
   const { loading, error, entities, filters } = useEntityList();
 
+  const showTypeColumn = filters.type === undefined;
+
   const defaultColumns: TableColumn<CatalogTableRow>[] = useMemo(() => {
     return [
       columnFactories.createTitleColumn({ hidden: true }),
@@ -95,7 +97,7 @@ export const CatalogTable = (props: CatalogTableProps) => {
       const baseColumns = [
         columnFactories.createSystemColumn(),
         columnFactories.createOwnerColumn(),
-        columnFactories.createSpecTypeColumn(),
+        columnFactories.createSpecTypeColumn({ hidden: !showTypeColumn }),
         columnFactories.createSpecLifecycleColumn(),
       ];
       switch (filters.kind?.value) {
@@ -106,10 +108,12 @@ export const CatalogTable = (props: CatalogTableProps) => {
           return [columnFactories.createOwnerColumn()];
         case 'group':
         case 'template':
-          return [columnFactories.createSpecTypeColumn()];
+          return [
+            columnFactories.createSpecTypeColumn({ hidden: !showTypeColumn }),
+          ];
         case 'location':
           return [
-            columnFactories.createSpecTypeColumn(),
+            columnFactories.createSpecTypeColumn({ hidden: !showTypeColumn }),
             columnFactories.createSpecTargetsColumn(),
           ];
         default:
@@ -120,9 +124,8 @@ export const CatalogTable = (props: CatalogTableProps) => {
             : [...baseColumns, columnFactories.createNamespaceColumn()];
       }
     }
-  }, [filters.kind?.value, entities]);
+  }, [filters.kind?.value, entities, showTypeColumn]);
 
-  const showTypeColumn = filters.type === undefined;
   // TODO(timbonicus): remove the title from the CatalogTable once using EntitySearchBar
   const titlePreamble = capitalize(filters.user?.value ?? 'all');
 
@@ -228,10 +231,6 @@ export const CatalogTable = (props: CatalogTableProps) => {
     };
   });
 
-  const typeColumn = (columns || defaultColumns).find(c => c.title === 'Type');
-  if (typeColumn) {
-    typeColumn.hidden = !showTypeColumn;
-  }
   const showPagination = rows.length > 20;
   const currentKind = filters.kind?.value || '';
   const currentType = filters.type?.value || '';
