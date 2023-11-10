@@ -48,11 +48,16 @@ import { useTranslationRef } from '@backstage/core-plugin-api/alpha';
 export interface BaseCatalogPageProps {
   filters: ReactNode;
   content?: ReactNode;
+  enablePagination?: boolean;
 }
 
 /** @internal */
 export function BaseCatalogPage(props: BaseCatalogPageProps) {
-  const { filters, content = <CatalogTable /> } = props;
+  const {
+    filters,
+    enablePagination,
+    content = <CatalogTable enablePagination={enablePagination} />,
+  } = props;
   const orgName =
     useApi(configApiRef).getOptionalString('organization.name') ?? 'Backstage';
   const createComponentLink = useRouteRef(createComponentRouteRef);
@@ -68,7 +73,7 @@ export function BaseCatalogPage(props: BaseCatalogPageProps) {
           />
           <SupportButton>All your software catalog entities</SupportButton>
         </ContentHeader>
-        <EntityListProvider>
+        <EntityListProvider enablePagination={enablePagination}>
           <CatalogFilterLayout>
             <CatalogFilterLayout.Filters>{filters}</CatalogFilterLayout.Filters>
             <CatalogFilterLayout.Content>{content}</CatalogFilterLayout.Content>
@@ -92,6 +97,7 @@ export interface DefaultCatalogPageProps {
   tableOptions?: TableProps<CatalogTableRow>['options'];
   emptyContent?: ReactNode;
   ownerPickerMode?: EntityOwnerPickerProps['mode'];
+  enablePagination?: boolean;
 }
 
 export function DefaultCatalogPage(props: DefaultCatalogPageProps) {
@@ -103,10 +109,12 @@ export function DefaultCatalogPage(props: DefaultCatalogPageProps) {
     tableOptions = {},
     emptyContent,
     ownerPickerMode,
+    enablePagination,
   } = props;
 
   return (
     <BaseCatalogPage
+      enablePagination={enablePagination}
       filters={
         <>
           <EntityKindPicker initialFilter={initialKind} />
@@ -125,6 +133,7 @@ export function DefaultCatalogPage(props: DefaultCatalogPageProps) {
           actions={actions}
           tableOptions={tableOptions}
           emptyContent={emptyContent}
+          enablePagination={enablePagination}
         />
       }
     />
