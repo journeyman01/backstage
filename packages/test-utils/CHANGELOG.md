@@ -1,5 +1,20 @@
 # @backstage/test-utils
 
+## 1.4.5-next.1
+
+### Patch Changes
+
+- [#21229](https://github.com/backstage/backstage/pull/21229) [`4aa43f62aa`](https://github.com/backstage/backstage/commit/4aa43f62aa3806843dd24975af4d705d4b75a2eb) - Updated dependency `cross-fetch` to `^4.0.0`.
+
+- Updated dependencies
+  - @backstage/plugin-permission-common@0.7.10-next.0
+  - @backstage/plugin-permission-react@0.4.17-next.1
+  - @backstage/config@1.1.1
+  - @backstage/core-app-api@1.11.1-next.0
+  - @backstage/core-plugin-api@1.8.0-next.0
+  - @backstage/theme@0.4.4-next.0
+  - @backstage/types@1.1.1
+
 ## 1.4.5-next.0
 
 ### Patch Changes

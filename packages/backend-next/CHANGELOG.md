@@ -1,5 +1,46 @@
 # example-backend-next
 
+## 0.0.17-next.3
+
+### Patch Changes
+
+- Updated dependencies
+  - @backstage/plugin-badges-backend@0.3.4-next.3
+  - @backstage/plugin-catalog-backend-module-backstage-openapi@0.1.0-next.3
+  - @backstage/plugin-permission-common@0.7.10-next.0
+  - @backstage/plugin-jenkins-backend@0.3.1-next.3
+  - @backstage/plugin-adr-backend@0.4.4-next.3
+  - @backstage/plugin-scaffolder-backend@1.19.0-next.3
+  - @backstage/backend-defaults@0.2.7-next.3
+  - @backstage/backend-tasks@0.5.12-next.3
+  - @backstage/plugin-app-backend@0.3.55-next.3
+  - @backstage/plugin-auth-node@0.4.1-next.3
+  - @backstage/plugin-azure-devops-backend@0.4.4-next.3
+  - @backstage/plugin-catalog-backend@1.15.0-next.3
+  - @backstage/plugin-catalog-backend-module-openapi@0.1.24-next.3
+  - @backstage/plugin-catalog-backend-module-scaffolder-entity-model@0.1.4-next.3
+  - @backstage/plugin-devtools-backend@0.2.4-next.3
+  - @backstage/plugin-entity-feedback-backend@0.2.4-next.3
+  - @backstage/plugin-kubernetes-backend@0.13.1-next.3
+  - @backstage/plugin-lighthouse-backend@0.3.4-next.3
+  - @backstage/plugin-linguist-backend@0.5.4-next.3
+  - @backstage/plugin-nomad-backend@0.1.9-next.3
+  - @backstage/plugin-permission-backend@0.5.30-next.3
+  - @backstage/plugin-permission-backend-module-allow-all-policy@0.1.4-next.3
+  - @backstage/plugin-permission-node@0.7.18-next.3
+  - @backstage/plugin-playlist-backend@0.3.11-next.3
+  - @backstage/plugin-proxy-backend@0.4.5-next.3
+  - @backstage/plugin-search-backend@1.4.7-next.3
+  - @backstage/plugin-search-backend-module-catalog@0.1.11-next.3
+  - @backstage/plugin-search-backend-module-explore@0.1.11-next.3
+  - @backstage/plugin-search-backend-module-techdocs@0.1.11-next.3
+  - @backstage/plugin-search-backend-node@1.2.11-next.3
+  - @backstage/plugin-sonarqube-backend@0.2.9-next.3
+  - @backstage/plugin-techdocs-backend@1.9.0-next.3
+  - @backstage/plugin-todo-backend@0.3.5-next.3
+  - @backstage/backend-plugin-api@0.6.7-next.3
+  - @backstage/plugin-catalog-backend-module-unprocessed@0.3.4-next.3
+
 ## 0.0.17-next.2
 
 ### Patch Changes

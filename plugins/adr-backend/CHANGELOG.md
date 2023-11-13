@@ -1,5 +1,22 @@
 # @backstage/plugin-adr-backend
 
+## 0.4.4-next.3
+
+### Patch Changes
+
+- [#21223](https://github.com/backstage/backstage/pull/21223) [`68f8a55622`](https://github.com/backstage/backstage/commit/68f8a55622301e27f41f85e142d67aff13867355) - Updated dependency `@types/marked` to `^5.0.0`.
+
+- Updated dependencies
+  - @backstage/backend-common@0.19.9-next.3
+  - @backstage/catalog-client@1.4.6-next.0
+  - @backstage/integration@1.7.2-next.1
+  - @backstage/backend-plugin-api@0.6.7-next.3
+  - @backstage/catalog-model@1.4.3
+  - @backstage/config@1.1.1
+  - @backstage/errors@1.2.3
+  - @backstage/plugin-adr-common@0.2.17-next.1
+  - @backstage/plugin-search-common@1.2.8-next.0
+
 ## 0.4.4-next.2
 
 ### Patch Changes

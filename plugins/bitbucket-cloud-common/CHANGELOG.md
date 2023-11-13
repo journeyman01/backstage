@@ -1,5 +1,14 @@
 # @backstage/plugin-bitbucket-cloud-common
 
+## 0.2.14-next.1
+
+### Patch Changes
+
+- [#21229](https://github.com/backstage/backstage/pull/21229) [`4aa43f62aa`](https://github.com/backstage/backstage/commit/4aa43f62aa3806843dd24975af4d705d4b75a2eb) - Updated dependency `cross-fetch` to `^4.0.0`.
+
+- Updated dependencies
+  - @backstage/integration@1.7.2-next.1
+
 ## 0.2.14-next.0
 
 ### Patch Changes

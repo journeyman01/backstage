@@ -1,5 +1,14 @@
 # @backstage/plugin-cicd-statistics-module-gitlab
 
+## 0.1.22-next.3
+
+### Patch Changes
+
+- Updated dependencies
+  - @backstage/plugin-cicd-statistics@0.1.28-next.3
+  - @backstage/catalog-model@1.4.3
+  - @backstage/core-plugin-api@1.8.0-next.0
+
 ## 0.1.22-next.2
 
 ### Patch Changes

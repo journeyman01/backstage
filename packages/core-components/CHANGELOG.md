@@ -1,5 +1,26 @@
 # @backstage/core-components
 
+## 0.13.8-next.3
+
+### Patch Changes
+
+- [#20979](https://github.com/backstage/backstage/pull/20979) [`66071b42c0`](https://github.com/backstage/backstage/commit/66071b42c03d988665c6d75d08a92d162f2de92f) Thanks [@dotboris](https://github.com/dotboris)! - Make the `options.titleFormat` prop of `<StructuredMetadataTable />` apply to all keys including nested ones. Previously, this option would only apply to the root keys of the `metadata` prop.
+
+  Document and improve the props of `<StructuredMetadataTable />`. Previously, the `options` prop was `any`.
+
+- [#21153](https://github.com/backstage/backstage/pull/21153) [`4b7d341746`](https://github.com/backstage/backstage/commit/4b7d3417464ef96b3c43186fc1aa98efc0e212ba) - Updated dependency `linkify-react` to `4.1.2`.
+
+- [#21154](https://github.com/backstage/backstage/pull/21154) [`0ef24425c1`](https://github.com/backstage/backstage/commit/0ef24425c1612be38d45363aaed86d526dd8a647) - Updated dependency `linkifyjs` to `4.1.2`.
+
+- [#21229](https://github.com/backstage/backstage/pull/21229) [`4aa43f62aa`](https://github.com/backstage/backstage/commit/4aa43f62aa3806843dd24975af4d705d4b75a2eb) - Updated dependency `cross-fetch` to `^4.0.0`.
+
+- Updated dependencies
+  - @backstage/config@1.1.1
+  - @backstage/core-plugin-api@1.8.0-next.0
+  - @backstage/errors@1.2.3
+  - @backstage/theme@0.4.4-next.0
+  - @backstage/version-bridge@1.0.7-next.0
+
 ## 0.13.8-next.2
 
 ### Patch Changes

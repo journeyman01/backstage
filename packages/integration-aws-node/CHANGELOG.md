@@ -1,5 +1,17 @@
 # @backstage/integration-aws-node
 
+## 0.1.8-next.0
+
+### Patch Changes
+
+- [#21228](https://github.com/backstage/backstage/pull/21228) [`20d97d28a3`](https://github.com/backstage/backstage/commit/20d97d28a3ba900dd0f8f2380001dbafa31f6d7f) - Updated dependency `aws-sdk-client-mock-jest` to `^3.0.0`.
+
+- [#21227](https://github.com/backstage/backstage/pull/21227) [`3d043526f4`](https://github.com/backstage/backstage/commit/3d043526f456c31cc6051207e13dcad6198ba6ea) - Updated dependency `aws-sdk-client-mock` to `^3.0.0`.
+
+- Updated dependencies
+  - @backstage/config@1.1.1
+  - @backstage/errors@1.2.3
+
 ## 0.1.7
 
 ### Patch Changes

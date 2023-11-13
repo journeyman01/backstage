@@ -1,5 +1,15 @@
 # @backstage/plugin-explore-react
 
+## 0.0.33-next.1
+
+### Patch Changes
+
+- [#21229](https://github.com/backstage/backstage/pull/21229) [`4aa43f62aa`](https://github.com/backstage/backstage/commit/4aa43f62aa3806843dd24975af4d705d4b75a2eb) - Updated dependency `cross-fetch` to `^4.0.0`.
+
+- Updated dependencies
+  - @backstage/core-plugin-api@1.8.0-next.0
+  - @backstage/plugin-explore-common@0.0.2
+
 ## 0.0.33-next.0
 
 ### Patch Changes

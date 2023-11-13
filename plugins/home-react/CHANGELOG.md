@@ -1,5 +1,20 @@
 # @backstage/plugin-home-react
 
+## 0.1.5-next.3
+
+### Patch Changes
+
+- [#21164](https://github.com/backstage/backstage/pull/21164) [`c838da0edd`](https://github.com/backstage/backstage/commit/c838da0edddd9d8eaae4fc7152f45994850bd861) - Updated dependency `@rjsf/utils` to `5.13.6`.
+  Updated dependency `@rjsf/core` to `5.13.6`.
+  Updated dependency `@rjsf/material-ui` to `5.13.6`.
+  Updated dependency `@rjsf/validator-ajv8` to `5.13.6`.
+
+- [#21229](https://github.com/backstage/backstage/pull/21229) [`4aa43f62aa`](https://github.com/backstage/backstage/commit/4aa43f62aa3806843dd24975af4d705d4b75a2eb) - Updated dependency `cross-fetch` to `^4.0.0`.
+
+- Updated dependencies
+  - @backstage/core-components@0.13.8-next.3
+  - @backstage/core-plugin-api@1.8.0-next.0
+
 ## 0.1.5-next.2
 
 ### Patch Changes

@@ -1,5 +1,25 @@
 # @backstage/plugin-catalog
 
+## 1.15.0-next.3
+
+### Patch Changes
+
+- Updated dependencies
+  - @backstage/plugin-catalog-react@1.9.0-next.3
+  - @backstage/plugin-search-react@1.7.2-next.3
+  - @backstage/core-components@0.13.8-next.3
+  - @backstage/catalog-client@1.4.6-next.0
+  - @backstage/frontend-plugin-api@0.3.0-next.3
+  - @backstage/integration-react@1.1.21-next.2
+  - @backstage/catalog-model@1.4.3
+  - @backstage/core-plugin-api@1.8.0-next.0
+  - @backstage/errors@1.2.3
+  - @backstage/theme@0.4.4-next.0
+  - @backstage/types@1.1.1
+  - @backstage/plugin-catalog-common@1.0.18-next.0
+  - @backstage/plugin-scaffolder-common@1.4.3-next.2
+  - @backstage/plugin-search-common@1.2.8-next.0
+
 ## 1.15.0-next.2
 
 ### Patch Changes

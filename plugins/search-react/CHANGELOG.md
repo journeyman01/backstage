@@ -1,5 +1,21 @@
 # @backstage/plugin-search-react
 
+## 1.7.2-next.3
+
+### Patch Changes
+
+- [#21030](https://github.com/backstage/backstage/pull/21030) [`f48cde800a`](https://github.com/backstage/backstage/commit/f48cde800a2a40086f2acb1de86020532716c916) - Emit search analytics in the search hook instead of in a dedicated component
+
+- Updated dependencies
+  - @backstage/core-components@0.13.8-next.3
+  - @backstage/frontend-app-api@0.3.0-next.3
+  - @backstage/frontend-plugin-api@0.3.0-next.3
+  - @backstage/core-plugin-api@1.8.0-next.0
+  - @backstage/theme@0.4.4-next.0
+  - @backstage/types@1.1.1
+  - @backstage/version-bridge@1.0.7-next.0
+  - @backstage/plugin-search-common@1.2.8-next.0
+
 ## 1.7.2-next.2
 
 ### Patch Changes

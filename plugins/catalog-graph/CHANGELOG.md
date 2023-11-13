@@ -1,5 +1,33 @@
 # @backstage/plugin-catalog-graph
 
+## 0.3.0-next.3
+
+### Minor Changes
+
+- [#20974](https://github.com/backstage/backstage/pull/20974) [`a604623324`](https://github.com/backstage/backstage/commit/a6046233241b75f22a992c3403736684ac10b370) Thanks [@benkeil](https://github.com/benkeil)! - Add the entire `Entity` to `EntityNodeData` and deprecate `name`, `kind`, `title`, `namespace` and `spec`.
+
+  To get the deprecated properties in your custom component you can use:
+
+  ```typescript
+  import { DEFAULT_NAMESPACE } from '@backstage/catalog-model';
+
+  const {
+    kind,
+    metadata: { name, namespace = DEFAULT_NAMESPACE, title },
+  } = entity;
+  ```
+
+### Patch Changes
+
+- Updated dependencies
+  - @backstage/plugin-catalog-react@1.9.0-next.3
+  - @backstage/core-components@0.13.8-next.3
+  - @backstage/catalog-client@1.4.6-next.0
+  - @backstage/catalog-model@1.4.3
+  - @backstage/core-plugin-api@1.8.0-next.0
+  - @backstage/theme@0.4.4-next.0
+  - @backstage/types@1.1.1
+
 ## 0.2.38-next.2
 
 ### Patch Changes

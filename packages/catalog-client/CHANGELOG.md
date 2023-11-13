@@ -1,5 +1,15 @@
 # @backstage/catalog-client
 
+## 1.4.6-next.0
+
+### Patch Changes
+
+- [#21229](https://github.com/backstage/backstage/pull/21229) [`4aa43f62aa`](https://github.com/backstage/backstage/commit/4aa43f62aa3806843dd24975af4d705d4b75a2eb) - Updated dependency `cross-fetch` to `^4.0.0`.
+
+- Updated dependencies
+  - @backstage/catalog-model@1.4.3
+  - @backstage/errors@1.2.3
+
 ## 1.4.5
 
 ### Patch Changes

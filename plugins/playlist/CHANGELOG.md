@@ -1,5 +1,38 @@
 # @backstage/plugin-playlist
 
+## 0.2.0-next.3
+
+### Minor Changes
+
+- [#20921](https://github.com/backstage/backstage/pull/20921) [`f0e2ef3b81`](https://github.com/backstage/backstage/commit/f0e2ef3b814cc94818c6096a33679d90ad3ca4aa) Thanks [@kuangp](https://github.com/kuangp)! - Support being able to define custom composable Playlist index pages
+
+  **BREAKING** The individual `PlaylistPage` route must now be manually hooked up by making the following change to your setup:
+
+  ```diff
+  -import { PlaylistIndexPage } from '@backstage/plugin-playlist';
+  +import { PlaylistIndexPage, PlaylistPage } from '@backstage/plugin-playlist';
+
+  // ...
+
+   <Route path="/playlist" element={<PlaylistIndexPage />} />
+  +<Route path="/playlist/:playlistId" element={<PlaylistPage />} />
+  ```
+
+### Patch Changes
+
+- Updated dependencies
+  - @backstage/plugin-catalog-react@1.9.0-next.3
+  - @backstage/plugin-search-react@1.7.2-next.3
+  - @backstage/core-components@0.13.8-next.3
+  - @backstage/plugin-permission-common@0.7.10-next.0
+  - @backstage/plugin-permission-react@0.4.17-next.1
+  - @backstage/catalog-model@1.4.3
+  - @backstage/core-plugin-api@1.8.0-next.0
+  - @backstage/errors@1.2.3
+  - @backstage/theme@0.4.4-next.0
+  - @backstage/plugin-catalog-common@1.0.18-next.0
+  - @backstage/plugin-playlist-common@0.1.12-next.0
+
 ## 0.1.18-next.2
 
 ### Patch Changes

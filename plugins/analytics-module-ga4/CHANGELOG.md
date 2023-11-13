@@ -1,5 +1,17 @@
 # @backstage/plugin-analytics-module-ga4
 
+## 0.1.6-next.3
+
+### Patch Changes
+
+- [#21222](https://github.com/backstage/backstage/pull/21222) [`504614d313`](https://github.com/backstage/backstage/commit/504614d31375b08a2d39efa448fa07b51196f92c) - Updated dependency `@types/jest` to `^29.0.0`.
+
+- Updated dependencies
+  - @backstage/core-components@0.13.8-next.3
+  - @backstage/config@1.1.1
+  - @backstage/core-plugin-api@1.8.0-next.0
+  - @backstage/theme@0.4.4-next.0
+
 ## 0.1.6-next.2
 
 ### Patch Changes

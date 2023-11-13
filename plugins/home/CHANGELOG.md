@@ -1,5 +1,25 @@
 # @backstage/plugin-home
 
+## 0.5.10-next.3
+
+### Patch Changes
+
+- [#21164](https://github.com/backstage/backstage/pull/21164) [`c838da0edd`](https://github.com/backstage/backstage/commit/c838da0edddd9d8eaae4fc7152f45994850bd861) - Updated dependency `@rjsf/utils` to `5.13.6`.
+  Updated dependency `@rjsf/core` to `5.13.6`.
+  Updated dependency `@rjsf/material-ui` to `5.13.6`.
+  Updated dependency `@rjsf/validator-ajv8` to `5.13.6`.
+- Updated dependencies
+  - @backstage/plugin-catalog-react@1.9.0-next.3
+  - @backstage/core-components@0.13.8-next.3
+  - @backstage/plugin-home-react@0.1.5-next.3
+  - @backstage/frontend-plugin-api@0.3.0-next.3
+  - @backstage/catalog-model@1.4.3
+  - @backstage/config@1.1.1
+  - @backstage/core-app-api@1.11.1-next.0
+  - @backstage/core-plugin-api@1.8.0-next.0
+  - @backstage/theme@0.4.4-next.0
+  - @backstage/types@1.1.1
+
 ## 0.5.10-next.2
 
 ### Patch Changes

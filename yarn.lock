@@ -3724,7 +3724,18 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@backstage/catalog-client@^1.4.5, @backstage/catalog-client@workspace:^, @backstage/catalog-client@workspace:packages/catalog-client":
+"@backstage/catalog-client@npm:^1.4.5":
+  version: 1.4.5
+  resolution: "@backstage/catalog-client@npm:1.4.5"
+  dependencies:
+    "@backstage/catalog-model": ^1.4.3
+    "@backstage/errors": ^1.2.3
+    cross-fetch: ^3.1.5
+  checksum: 9319d0a7b6b0f54b001124dda7cd419b4ae247c52a53c9049fbb07637ef1df4eb073ca5eb36f8e2aef40fdd9bf8717632d8eac385b3c9bd8ca4c7780493f2b49
+  languageName: node
+  linkType: hard
+
+"@backstage/catalog-client@workspace:^, @backstage/catalog-client@workspace:packages/catalog-client":
   version: 0.0.0-use.local
   resolution: "@backstage/catalog-client@workspace:packages/catalog-client"
   dependencies:
@@ -5911,7 +5922,18 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@backstage/plugin-catalog-common@^1.0.10, @backstage/plugin-catalog-common@^1.0.17, @backstage/plugin-catalog-common@workspace:^, @backstage/plugin-catalog-common@workspace:plugins/catalog-common":
+"@backstage/plugin-catalog-common@npm:^1.0.10, @backstage/plugin-catalog-common@npm:^1.0.17":
+  version: 1.0.17
+  resolution: "@backstage/plugin-catalog-common@npm:1.0.17"
+  dependencies:
+    "@backstage/catalog-model": ^1.4.3
+    "@backstage/plugin-permission-common": ^0.7.9
+    "@backstage/plugin-search-common": ^1.2.7
+  checksum: 6d4b60c947b4727fa964857125f9c18ca1796a48db490baaffd3b4976829e7e778c4e53e14ca246f819c6ec17fe9c8aba6039ccff528c549e2b115193f77c228
+  languageName: node
+  linkType: hard
+
+"@backstage/plugin-catalog-common@workspace:^, @backstage/plugin-catalog-common@workspace:plugins/catalog-common":
   version: 0.0.0-use.local
   resolution: "@backstage/plugin-catalog-common@workspace:plugins/catalog-common"
   dependencies:
@@ -8451,7 +8473,21 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@backstage/plugin-permission-common@^0.7.9, @backstage/plugin-permission-common@workspace:^, @backstage/plugin-permission-common@workspace:plugins/permission-common":
+"@backstage/plugin-permission-common@npm:^0.7.9":
+  version: 0.7.9
+  resolution: "@backstage/plugin-permission-common@npm:0.7.9"
+  dependencies:
+    "@backstage/config": ^1.1.1
+    "@backstage/errors": ^1.2.3
+    "@backstage/types": ^1.1.1
+    cross-fetch: ^3.1.5
+    uuid: ^8.0.0
+    zod: ^3.21.4
+  checksum: 11f2c26b20230f037368bd706cabeb647fe5fa25ede6fe6b352039a681e09f275b754affefeea15d3166f05f9b1e46764472acb3702e81d8c2ab34bb4836cbc1
+  languageName: node
+  linkType: hard
+
+"@backstage/plugin-permission-common@workspace:^, @backstage/plugin-permission-common@workspace:plugins/permission-common":
   version: 0.0.0-use.local
   resolution: "@backstage/plugin-permission-common@workspace:plugins/permission-common"
   dependencies:
@@ -9244,6 +9280,16 @@ __metadata:
     zod: ^3.21.4
   languageName: unknown
   linkType: soft
+
+"@backstage/plugin-search-common@npm:^1.2.7":
+  version: 1.2.7
+  resolution: "@backstage/plugin-search-common@npm:1.2.7"
+  dependencies:
+    "@backstage/plugin-permission-common": ^0.7.9
+    "@backstage/types": ^1.1.1
+  checksum: 2b393da31416436a949f98df43eaf80f67f330b6516a0a34c707f700c53c5b4021a46ef8557288f6cb1d3d7ac6ac95524edce6c0356fb79bb72fa86b177a0764
+  languageName: node
+  linkType: hard
 
 "@backstage/plugin-search-common@workspace:^, @backstage/plugin-search-common@workspace:plugins/search-common":
   version: 0.0.0-use.local

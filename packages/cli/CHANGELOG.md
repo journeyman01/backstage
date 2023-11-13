@@ -1,5 +1,27 @@
 # @backstage/cli
 
+## 0.24.0-next.2
+
+### Patch Changes
+
+- [#21175](https://github.com/backstage/backstage/pull/21175) [`cd80ebb062`](https://github.com/backstage/backstage/commit/cd80ebb06270dfecc64f6a215ab029bb2b0e65bd) - Updated dependency `vite-plugin-node-polyfills` to `^0.16.0`.
+
+- [#21229](https://github.com/backstage/backstage/pull/21229) [`4aa43f62aa`](https://github.com/backstage/backstage/commit/4aa43f62aa3806843dd24975af4d705d4b75a2eb) - Updated dependency `cross-fetch` to `^4.0.0`.
+
+- [#21220](https://github.com/backstage/backstage/pull/21220) [`971dcba764`](https://github.com/backstage/backstage/commit/971dcba7647444bb8b97206710250471a0bc7691) - Updated dependency `@typescript-eslint/eslint-plugin` to `6.10.0`.
+
+- Updated dependencies
+  - @backstage/integration@1.7.2-next.1
+  - @backstage/release-manifests@0.0.11-next.0
+  - @backstage/config-loader@1.5.3-next.1
+  - @backstage/catalog-model@1.4.3
+  - @backstage/cli-common@0.1.13
+  - @backstage/cli-node@0.2.0-next.0
+  - @backstage/config@1.1.1
+  - @backstage/errors@1.2.3
+  - @backstage/eslint-plugin@0.1.3
+  - @backstage/types@1.1.1
+
 ## 0.24.0-next.1
 
 ### Patch Changes

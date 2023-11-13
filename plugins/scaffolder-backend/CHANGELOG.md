@@ -1,5 +1,35 @@
 # @backstage/plugin-scaffolder-backend
 
+## 1.19.0-next.3
+
+### Minor Changes
+
+- [#20983](https://github.com/backstage/backstage/pull/20983) [`7d5a921114`](https://github.com/backstage/backstage/commit/7d5a921114f2a0285ef3a856f5d2e7312b78b1b3) Thanks [@electrofelix](https://github.com/electrofelix)! - Allow using `globby`'s negative matching with `copyWithoutTemplating`/`copyWithoutRender`. This allows including an entire subdirectory while excluding a single file so that it will still be templated instead of needing to list every other file and ensure the list is updated when new files are added.
+
+### Patch Changes
+
+- [#20750](https://github.com/backstage/backstage/pull/20750) [`23f72b2cba`](https://github.com/backstage/backstage/commit/23f72b2cbaa0040ab08958689ac52af6ca8db054) Thanks [@mbenson](https://github.com/mbenson)! - Refactoring the runner to generate minimally informative task log per iteration and properly validate iterated actions.
+
+- Updated dependencies
+  - @backstage/backend-common@0.19.9-next.3
+  - @backstage/catalog-client@1.4.6-next.0
+  - @backstage/integration@1.7.2-next.1
+  - @backstage/plugin-permission-common@0.7.10-next.0
+  - @backstage/backend-tasks@0.5.12-next.3
+  - @backstage/plugin-auth-node@0.4.1-next.3
+  - @backstage/plugin-catalog-backend@1.15.0-next.3
+  - @backstage/plugin-catalog-backend-module-scaffolder-entity-model@0.1.4-next.3
+  - @backstage/plugin-catalog-node@1.5.0-next.3
+  - @backstage/plugin-permission-node@0.7.18-next.3
+  - @backstage/plugin-scaffolder-node@0.2.8-next.3
+  - @backstage/backend-plugin-api@0.6.7-next.3
+  - @backstage/catalog-model@1.4.3
+  - @backstage/config@1.1.1
+  - @backstage/errors@1.2.3
+  - @backstage/types@1.1.1
+  - @backstage/plugin-catalog-common@1.0.18-next.0
+  - @backstage/plugin-scaffolder-common@1.4.3-next.2
+
 ## 1.19.0-next.2
 
 ### Patch Changes

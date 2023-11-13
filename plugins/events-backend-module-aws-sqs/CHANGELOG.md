@@ -1,5 +1,19 @@
 # @backstage/plugin-events-backend-module-aws-sqs
 
+## 0.2.10-next.3
+
+### Patch Changes
+
+- [#21227](https://github.com/backstage/backstage/pull/21227) [`3d043526f4`](https://github.com/backstage/backstage/commit/3d043526f456c31cc6051207e13dcad6198ba6ea) - Updated dependency `aws-sdk-client-mock` to `^3.0.0`.
+
+- Updated dependencies
+  - @backstage/backend-common@0.19.9-next.3
+  - @backstage/backend-tasks@0.5.12-next.3
+  - @backstage/backend-plugin-api@0.6.7-next.3
+  - @backstage/config@1.1.1
+  - @backstage/types@1.1.1
+  - @backstage/plugin-events-node@0.2.16-next.3
+
 ## 0.2.10-next.2
 
 ### Patch Changes

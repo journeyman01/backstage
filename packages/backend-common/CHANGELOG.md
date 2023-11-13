@@ -1,5 +1,25 @@
 # @backstage/backend-common
 
+## 0.19.9-next.3
+
+### Patch Changes
+
+- [#21038](https://github.com/backstage/backstage/pull/21038) [`aa13482090`](https://github.com/backstage/backstage/commit/aa13482090def161429202b55c653c86d7339937) - Limit the database creation concurrency to one, defensively
+
+- [#21227](https://github.com/backstage/backstage/pull/21227) [`3d043526f4`](https://github.com/backstage/backstage/commit/3d043526f456c31cc6051207e13dcad6198ba6ea) - Updated dependency `aws-sdk-client-mock` to `^3.0.0`.
+
+- Updated dependencies
+  - @backstage/integration-aws-node@0.1.8-next.0
+  - @backstage/integration@1.7.2-next.1
+  - @backstage/config-loader@1.5.3-next.1
+  - @backstage/backend-app-api@0.5.8-next.3
+  - @backstage/backend-dev-utils@0.1.2
+  - @backstage/backend-plugin-api@0.6.7-next.3
+  - @backstage/cli-common@0.1.13
+  - @backstage/config@1.1.1
+  - @backstage/errors@1.2.3
+  - @backstage/types@1.1.1
+
 ## 0.19.9-next.2
 
 ### Patch Changes

@@ -1,5 +1,27 @@
 # @backstage/plugin-api-docs
 
+## 0.10.0-next.3
+
+### Minor Changes
+
+- [#20850](https://github.com/backstage/backstage/pull/20850) [`62310404b7`](https://github.com/backstage/backstage/commit/62310404b7775077b58fc614dd96c1fe09b8b39d) Thanks [@GuillaumeRahbari](https://github.com/GuillaumeRahbari)! - Define a default for oauth2RedirectUrl option of swagger-ui-react to match documentation
+
+### Patch Changes
+
+- [#21229](https://github.com/backstage/backstage/pull/21229) [`4aa43f62aa`](https://github.com/backstage/backstage/commit/4aa43f62aa3806843dd24975af4d705d4b75a2eb) - Updated dependency `cross-fetch` to `^4.0.0`.
+
+- [#21143](https://github.com/backstage/backstage/pull/21143) [`613a55911f`](https://github.com/backstage/backstage/commit/613a55911fb85b16547e06715071a8211c437ff1) - Updated dependency `graphiql` to `3.0.9`.
+
+- [#21179](https://github.com/backstage/backstage/pull/21179) [`4ad15278e6`](https://github.com/backstage/backstage/commit/4ad15278e6ac89687de7539561f14894d0e17b12) - Updated dependency `@graphiql/react` to `^0.20.0`.
+
+- Updated dependencies
+  - @backstage/plugin-catalog-react@1.9.0-next.3
+  - @backstage/core-components@0.13.8-next.3
+  - @backstage/plugin-catalog@1.15.0-next.3
+  - @backstage/catalog-model@1.4.3
+  - @backstage/core-plugin-api@1.8.0-next.0
+  - @backstage/theme@0.4.4-next.0
+
 ## 0.10.0-next.2
 
 ### Minor Changes

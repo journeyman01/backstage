@@ -1,5 +1,21 @@
 # @backstage/plugin-bazaar
 
+## 0.2.18-next.3
+
+### Patch Changes
+
+- [#20834](https://github.com/backstage/backstage/pull/20834) [`4e66e37bd1`](https://github.com/backstage/backstage/commit/4e66e37bd1f679b65e547b1245739bee434be67d) Thanks [@AmbrishRamachandiran](https://github.com/AmbrishRamachandiran)! - Added alert popup for link and unlink entity in bazaar project
+
+- Updated dependencies
+  - @backstage/plugin-catalog-react@1.9.0-next.3
+  - @backstage/core-components@0.13.8-next.3
+  - @backstage/catalog-client@1.4.6-next.0
+  - @backstage/plugin-catalog@1.15.0-next.3
+  - @backstage/catalog-model@1.4.3
+  - @backstage/core-plugin-api@1.8.0-next.0
+  - @backstage/errors@1.2.3
+  - @backstage/theme@0.4.4-next.0
+
 ## 0.2.18-next.2
 
 ### Patch Changes

@@ -1,5 +1,26 @@
 # @backstage/plugin-techdocs
 
+## 1.9.0-next.3
+
+### Patch Changes
+
+- [#21229](https://github.com/backstage/backstage/pull/21229) [`4aa43f62aa`](https://github.com/backstage/backstage/commit/4aa43f62aa3806843dd24975af4d705d4b75a2eb) - Updated dependency `cross-fetch` to `^4.0.0`.
+
+- Updated dependencies
+  - @backstage/plugin-catalog-react@1.9.0-next.3
+  - @backstage/plugin-search-react@1.7.2-next.3
+  - @backstage/core-components@0.13.8-next.3
+  - @backstage/integration@1.7.2-next.1
+  - @backstage/frontend-plugin-api@0.3.0-next.3
+  - @backstage/integration-react@1.1.21-next.2
+  - @backstage/plugin-techdocs-react@1.1.13-next.3
+  - @backstage/catalog-model@1.4.3
+  - @backstage/config@1.1.1
+  - @backstage/core-plugin-api@1.8.0-next.0
+  - @backstage/errors@1.2.3
+  - @backstage/theme@0.4.4-next.0
+  - @backstage/plugin-search-common@1.2.8-next.0
+
 ## 1.9.0-next.2
 
 ### Minor Changes

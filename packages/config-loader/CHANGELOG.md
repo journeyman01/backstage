@@ -1,5 +1,17 @@
 # @backstage/config-loader
 
+## 1.5.3-next.1
+
+### Patch Changes
+
+- [#21200](https://github.com/backstage/backstage/pull/21200) [`087bab5b42`](https://github.com/backstage/backstage/commit/087bab5b42a342e41ad1553c3374c449e8e398fc) - Updated dependency `typescript-json-schema` to `^0.62.0`.
+
+- Updated dependencies
+  - @backstage/cli-common@0.1.13
+  - @backstage/config@1.1.1
+  - @backstage/errors@1.2.3
+  - @backstage/types@1.1.1
+
 ## 1.5.2-next.0
 
 ### Patch Changes

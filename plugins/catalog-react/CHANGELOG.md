@@ -1,5 +1,26 @@
 # @backstage/plugin-catalog-react
 
+## 1.9.0-next.3
+
+### Patch Changes
+
+- [#21147](https://github.com/backstage/backstage/pull/21147) [`2ad1bacef7`](https://github.com/backstage/backstage/commit/2ad1bacef70eed361d6685aec20a43bb409888e9) Thanks [@clanghout](https://github.com/clanghout)! - Add EntityRef to Entity Inspector UI
+
+- Updated dependencies
+  - @backstage/core-components@0.13.8-next.3
+  - @backstage/catalog-client@1.4.6-next.0
+  - @backstage/plugin-permission-common@0.7.10-next.0
+  - @backstage/plugin-permission-react@0.4.17-next.1
+  - @backstage/frontend-plugin-api@0.3.0-next.3
+  - @backstage/integration-react@1.1.21-next.2
+  - @backstage/catalog-model@1.4.3
+  - @backstage/core-plugin-api@1.8.0-next.0
+  - @backstage/errors@1.2.3
+  - @backstage/theme@0.4.4-next.0
+  - @backstage/types@1.1.1
+  - @backstage/version-bridge@1.0.7-next.0
+  - @backstage/plugin-catalog-common@1.0.18-next.0
+
 ## 1.9.0-next.2
 
 ### Patch Changes
